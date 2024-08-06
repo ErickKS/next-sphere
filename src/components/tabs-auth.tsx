@@ -16,12 +16,12 @@ export default function TabAuth(){
           <div className="space-y-5 mb-6">
             <div className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" placeholder="Email" />
+              <Input type="email" id="email" placeholder="john.doe@email.com" />
             </div>
 
             <div className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="password">Password</Label>
-              <Input type="password" id="password" placeholder="Password" />
+              <Input type="password" id="password" placeholder="••••••••" />
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function TabAuth(){
 
             <div className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" placeholder="jon.doe@email.com" />
+              <Input type="email" id="email" placeholder="john.doe@email.com" />
             </div>
 
             <div className="grid w-full max-w-sm items-center gap-1.5">
