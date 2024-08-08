@@ -1,9 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Label } from "./ui/label"
-import { Input } from "./ui/input"
-import { Button } from "./ui/button"
+import { SignInForm } from "./auth/sign-in-form"
+import { SignUpForm } from "./auth/sign-up-form"
 
-export default function TabAuth(){
+export function TabAuth(){
   return (
     <Tabs defaultValue="sign-in" className="w-full">
       <TabsList className="grid w-full grid-cols-2">
@@ -12,49 +11,11 @@ export default function TabAuth(){
       </TabsList>
 
       <TabsContent value="sign-in">
-        <div className="mt-8">
-          <div className="space-y-5 mb-6">
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" placeholder="john.doe@email.com" />
-            </div>
-
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="password">Password</Label>
-              <Input type="password" id="password" placeholder="••••••••" />
-            </div>
-          </div>
-
-          <Button className="w-full">Sign in</Button>
-        </div>
+        <SignInForm/>
       </TabsContent>
 
       <TabsContent value="sign-up">
-        <div className="mt-8">
-          <div className="space-y-5 mb-6">
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="name">Name</Label>
-              <Input type="name" id="name" placeholder="John Doe" />
-            </div>
-
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="bio">Bio</Label>
-              <Input type="bio" id="bio" placeholder="Full Stack Developer" />
-            </div>
-
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" placeholder="john.doe@email.com" />
-            </div>
-
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="password">Password</Label>
-              <Input type="password" id="password" placeholder="••••••••" />
-            </div>
-          </div>
-
-          <Button className="w-full">Create account</Button>
-        </div>
+        <SignUpForm/>
       </TabsContent>
     </Tabs>
   )
