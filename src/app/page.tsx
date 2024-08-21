@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { TabAuth } from "@/components/tabs-auth"
+import { TabAuth } from "@/components/auth/tabs-auth"
 
 export default function Home() {
   return (
